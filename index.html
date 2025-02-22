@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Zed & White</title>
+    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="styles/media.css" />
+</head>
+
+<body>
+    <!-- <div id="loader-wrapper">
+        <div id="loader-inner-wrapper">
+            <div id="loader-bar">
+                <div class="loader-bg"></div>
+                <div class="loader-fg"></div>
+            </div>
+        </div>
+    </div> -->
+        <div id="above-the-fold">
+            <div id="header-container">
+                <div class="header-inner">
+                    <p class="header-link">Vision & mission</p>
+                    <div class="header-logo"><svg width="92" height="57" viewBox="0 0 92 57" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2242_231)">
+                                <path
+                                    d="M0.389722 24.2433H16.2482V19.3685H9.13228V19.044L15.9237 10.5941V7.47372H0.715555V12.3484H7.66667V12.7062L0.383333 21.1562L0.389722 24.2433ZM27.4927 24.6662C31.7822 24.6662 35.2271 22.7495 36.0717 19.5973L30.8392 18.6543C30.5682 19.2195 30.1376 19.693 29.6005 20.0164C29.0635 20.3397 28.4436 20.4988 27.8172 20.4738C26.979 20.4924 26.1633 20.2009 25.5267 19.6553C24.89 19.1097 24.4772 18.3483 24.3672 17.5171H36.6186C36.6884 16.9662 36.7208 16.4112 36.7157 15.8559C36.7157 10.4893 33.0766 7.0495 27.5514 7.0495C21.9944 7.0495 18.0959 10.4612 18.0959 15.7908C18.101 21.1881 21.9356 24.6611 27.4927 24.6611V24.6662ZM24.3084 14.2677C24.3485 13.4622 24.693 12.7021 25.2723 12.141C25.8516 11.58 26.6225 11.2599 27.4288 11.2457C28.2378 11.2612 29.0113 11.5807 29.5954 12.1407C30.1796 12.7007 30.5314 13.46 30.5811 14.2677H24.3084ZM46.1789 24.6611C47.1204 24.7054 48.0579 24.5111 48.9043 24.0963C49.7507 23.6815 50.4786 23.0596 51.0204 22.2883H51.3449V24.2382H57.4233V0H51.3462V9.42361H51.0217C50.4704 8.65405 49.736 8.03406 48.8849 7.61976C48.0337 7.20545 47.0927 7.00988 46.1469 7.05077C41.7603 7.05077 38.7358 10.5276 38.7358 15.8572C38.7371 21.2533 41.7271 24.6611 46.1789 24.6611ZM48.2233 19.5589C47.7535 19.552 47.29 19.4488 46.8616 19.2559C46.4331 19.0629 46.0487 18.7843 45.7321 18.4371C45.4154 18.0899 45.1732 17.6816 45.0204 17.2372C44.8676 16.7928 44.8074 16.3219 44.8436 15.8534C44.8074 15.3849 44.8676 14.9139 45.0204 14.4696C45.1732 14.0252 45.4154 13.6168 45.7321 13.2697C46.0487 12.9225 46.4331 12.6438 46.8616 12.4509C47.29 12.2579 47.7535 12.1548 48.2233 12.1478C48.6923 12.1577 49.1543 12.2628 49.5814 12.4568C50.0084 12.6507 50.3917 12.9294 50.7077 13.2759C51.0238 13.6225 51.2662 14.0297 51.4201 14.4727C51.574 14.9158 51.6362 15.3855 51.6031 15.8534C51.6368 16.3214 51.575 16.7913 51.4215 17.2346C51.268 17.678 51.0259 18.0855 50.7101 18.4324C50.3942 18.7794 50.0111 19.0585 49.5841 19.2528C49.157 19.4471 48.695 19.5526 48.2259 19.5628L48.2233 19.5589ZM4.67922 56.2529H12.4456L14.49 46.6338H14.8222L16.8373 56.2529H24.5717L29.3122 39.4833H23.2683L20.6361 50.2729H20.3167L17.3867 39.4833H11.8616L9.22939 50.1106H8.90483L6.23939 39.4833H0L4.67922 56.2529ZM31.4576 56.2529H37.5347V47.0222C37.4994 46.6678 37.5371 46.3099 37.6457 45.9707C37.7542 45.6314 37.9312 45.3181 38.1658 45.05C38.4003 44.782 38.6873 44.5649 39.0091 44.4122C39.3309 44.2596 39.6806 44.1746 40.0366 44.1626C40.375 44.1722 40.7076 44.2525 41.0131 44.3983C41.3187 44.5442 41.5903 44.7523 41.8106 45.0093C42.0309 45.2663 42.1951 45.5666 42.2925 45.8908C42.3899 46.215 42.4184 46.556 42.3762 46.8919V56.2516H48.4853V45.7879C48.4853 41.8881 46.0486 39.0604 42.5704 39.0604C41.6039 39.0674 40.6569 39.3335 39.8281 39.8308C38.9993 40.3281 38.319 41.0386 37.858 41.8881H37.5334V32.0083H31.4576V56.2529ZM54.5956 37.6638C55.0485 37.6915 55.5021 37.6249 55.9279 37.4682C56.3537 37.3115 56.7423 37.068 57.0691 36.7533C57.396 36.4386 57.6539 36.0595 57.8266 35.64C57.9993 35.2204 58.083 34.7696 58.0724 34.316C58.082 33.8642 57.9974 33.4153 57.8239 32.998C57.6504 32.5807 57.3918 32.2041 57.0647 31.8923C56.7376 31.5804 56.3491 31.3401 55.924 31.1868C55.4989 31.0334 55.0465 30.9703 54.5956 31.0014C54.1472 30.9755 53.6983 31.0424 53.277 31.1981C52.8557 31.3537 52.4711 31.5946 52.1472 31.9058C51.8233 32.2169 51.5672 32.5916 51.3948 33.0063C51.2225 33.4211 51.1376 33.8669 51.1456 34.316C51.1368 34.7668 51.2208 35.2145 51.3924 35.6315C51.5641 36.0484 51.8196 36.4256 52.1432 36.7396C52.4667 37.0535 52.8514 37.2976 53.2733 37.4566C53.6952 37.6156 54.1453 37.6861 54.5956 37.6638ZM51.5737 56.2529H57.6508V39.4833H51.5737V56.2529ZM68.1145 56.6758C69.3613 56.6696 70.5998 56.4723 71.7868 56.0906V51.8663C71.255 52.0013 70.71 52.0775 70.1615 52.0937C69.8838 52.0972 69.6084 52.0419 69.3536 51.9313C69.0988 51.8208 68.8703 51.6576 68.6831 51.4524C68.4959 51.2472 68.3543 51.0047 68.2675 50.7408C68.1807 50.477 68.1508 50.1978 68.1797 49.9215V43.8124H71.6833V39.4833H68.1797V34.2508H63.4021L62.2968 39.4833H59.9278V43.8061H62.0732V50.2077C62.0693 54.0756 64.4422 56.6758 68.1145 56.6758ZM82.7706 56.6758C87.0601 56.6758 90.505 54.7592 91.3496 51.6069L86.1222 50.6639C85.8512 51.2291 85.4206 51.7026 84.8836 52.026C84.3466 52.3493 83.7266 52.5084 83.1003 52.4834C82.262 52.502 81.4464 52.2106 80.8098 51.6649C80.1731 51.1193 79.7602 50.3579 79.6503 49.5267H91.9016C91.9715 48.9758 92.0039 48.4208 91.9987 47.8656C91.9987 42.4989 88.3596 39.0591 82.8345 39.0591C77.2775 39.0591 73.3789 42.4708 73.3789 47.8004C73.3789 53.1977 77.2136 56.6758 82.7706 56.6758ZM79.5864 46.2773C79.6264 45.4718 79.971 44.7117 80.5503 44.1506C81.1296 43.5896 81.9004 43.2696 82.7067 43.2553C83.5157 43.2708 84.2893 43.5903 84.8734 44.1503C85.4575 44.7103 85.8094 45.4696 85.859 46.2773H79.5864Z"
+                                    fill="#141313" />
+                                <path
+                                    d="M91.545 9.84913C91.5879 8.84436 91.2357 7.86272 90.564 7.11429C89.8922 6.36586 88.9542 5.91012 87.9506 5.84459C87.5869 5.8338 87.2249 5.89749 86.8867 6.03173C86.5485 6.16597 86.2413 6.36794 85.984 6.62522C85.7267 6.8825 85.5248 7.18967 85.3905 7.52786C85.2563 7.86604 85.1926 8.2281 85.2034 8.5918C85.1911 8.88606 85.2409 9.17962 85.3495 9.45339C85.4581 9.72715 85.6231 9.97501 85.8337 10.1808C86.0444 10.3867 86.296 10.5459 86.5722 10.6481C86.8484 10.7504 87.143 10.7933 87.4369 10.7742C89.7472 10.7742 89.2859 8.51514 90.3899 8.51514C90.878 8.51514 91.2843 9.13103 91.2843 9.82486C91.2843 10.7193 90.5918 11.776 88.486 11.776C86.9974 11.776 85.3797 11.417 84.5837 11.417C83.9077 11.3678 83.2291 11.4625 82.5925 11.6949C81.9558 11.9274 81.3758 12.2922 80.8906 12.7654C80.4054 13.2385 80.026 13.8092 79.7776 14.4397C79.5292 15.0703 79.4174 15.7464 79.4496 16.4233C79.4496 18.4767 80.6813 20.8137 83.0695 20.8137C83.4323 20.8296 83.7945 20.7703 84.1333 20.6395C84.4721 20.5087 84.7802 20.3092 85.0382 20.0536C85.2962 19.798 85.4986 19.4918 85.6326 19.1542C85.7665 18.8167 85.8292 18.455 85.8167 18.0921C85.8275 17.797 85.7769 17.503 85.6681 17.2285C85.5594 16.9541 85.3948 16.7052 85.1848 16.4976C84.9749 16.29 84.7241 16.1283 84.4484 16.0227C84.1727 15.9171 83.8781 15.8699 83.5832 15.8841C81.3241 15.8841 81.7342 18.1176 80.5791 18.1176C79.9402 18.1176 79.7064 17.4251 79.7064 16.8859C79.7064 15.2426 81.632 14.8069 82.9417 14.8069C85.0986 14.8069 87.6912 16.0131 87.6912 18.478C87.7035 19.2337 87.5324 19.9812 87.1926 20.6564C86.8528 21.3316 86.3544 21.9143 85.7401 22.3547C84.4076 23.3182 82.8145 23.8554 81.1707 23.8957C80.4152 23.9231 79.6624 23.7919 78.9607 23.5106C78.2591 23.2293 77.6241 22.804 77.0968 22.2623C76.5695 21.7206 76.1616 21.0744 75.8993 20.3653C75.6371 19.6563 75.5263 18.9002 75.5741 18.1458C75.5741 15.6554 76.9349 13.3196 79.5019 13.3196L79.8099 13.294V13.0116L79.5019 13.0372C77.0371 13.0372 76.6269 10.7781 76.6269 8.72469C76.6269 4.79681 77.9367 3.43597 79.3486 3.43597H79.5032C80.9407 3.41042 81.8914 4.05186 81.8914 5.05364C81.8914 6.77353 79.3754 6.44003 79.3754 8.54453C79.3618 8.83811 79.4096 9.13131 79.5157 9.40538C79.6218 9.67944 79.784 9.92835 79.9918 10.1362C80.1996 10.344 80.4485 10.5061 80.7226 10.6123C80.9967 10.7184 81.2899 10.7662 81.5834 10.7525C81.9798 10.7304 82.3676 10.6278 82.7231 10.4511C83.0786 10.2743 83.3945 10.0271 83.6515 9.7245C83.9084 9.42186 84.1012 9.07011 84.2179 8.69065C84.3347 8.31119 84.3731 7.91195 84.3307 7.51719C84.3238 6.90701 84.1905 6.30488 83.9391 5.74883C83.6878 5.19279 83.3238 4.6949 82.8703 4.28664C82.4167 3.87838 81.8835 3.5686 81.3042 3.37688C80.7248 3.18515 80.112 3.11564 79.5045 3.17275H79.3499C76.3458 3.17275 73.1884 5.09836 73.1884 8.6672C73.1884 11.6713 75.8066 12.9797 78.3749 13.1087L78.4005 13.1343H78.067C73.8823 13.1343 71.6232 15.6758 71.6232 18.294C71.6232 21.1945 74.4471 24.1986 80.4552 24.1986C83.8949 24.1986 87.9519 22.4787 87.9519 18.4741C87.928 17.755 87.6974 17.058 87.2877 16.4666C86.878 15.8751 86.3065 15.4143 85.6417 15.1391C86.0588 15.2474 86.4885 15.2994 86.9194 15.2937C89.8839 15.2912 91.545 12.5184 91.545 9.84913Z"
+                                    fill="#141313" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2242_231">
+                                    <rect width="92" height="56.6758" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <p class="header-link">The brain behind</p>
+                </div>
+            </div>
+            <div id="hero-container">
+                <div class="intro-container">
+                    <h1 class="main-hero-headline">Digital Experience & Product Design Studio.</h1>
+                    <p class="main-hero-para">Expert in MVPs, day-to-day apps, B2B and Enterprise SaaS Applications.
+                        Designing since 2016 with partners from 4 continents.</p>
+                </div>
+                <div id="cta-main" data-cursor="-inverse" ><span data-cursor="-opaque">WORK WITH US</span></div>
+            </div>
+        </div>
+        <!--<div id="workshowcase">
+            <div id="work-intro-wrapper">
+                <h1 class="work-intro-heading">Aligned with the greater goals of your business, we design for users, not
+                    for
+                    other designers.</h1>
+                <p class="work-intro-para">See how we have been in a strategic partnership with our clients to help them
+                    achieve their targets and beyond.</p>
+            </div>
+            <div id="work-case-wrapper">
+                <div class="left-info-panel">
+                    <div class="case-study-outer-wrapper">
+                        <h1 class="case-study-intro">A rebrand that helped Code Avenue increase their revenue by 200% in
+                            a single year.</h1>
+                        <div class="information-wrapper">
+                            <div class="right-side">
+                                <div class="problem-wrapper">
+                                    <h1 class="cs-heading">Problem:</h1>
+                                    <p class="cs-para">Code Avenue was struggling to get new clients and retain old ones
+                                        due to an identity-crises.</p>
+                                </div>
+                                <div class="outcome-wrapper">
+                                    <h1 class="cs-heading">Outcomes:</h1>
+                                    <ul>
+                                        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z"
+                                                    fill="#141313" stroke="#141313" stroke-width="1.5"
+                                                    stroke-linejoin="round" />
+                                            </svg>Focus on the importance of good design</li>
+                                        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z"
+                                                    fill="#141313" stroke="#141313" stroke-width="1.5"
+                                                    stroke-linejoin="round" />
+                                            </svg>Record revenue increase despite Covid-19</li>
+                                        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z"
+                                                    fill="#141313" stroke="#141313" stroke-width="1.5"
+                                                    stroke-linejoin="round" />
+                                            </svg>Increased client acquisition and retention</li>
+                                        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z"
+                                                    fill="#141313" stroke="#141313" stroke-width="1.5"
+                                                    stroke-linejoin="round" />
+                                            </svg>Elevated office space</li>
+                                    </ul>
+                                </div>
+                                <div class="country-wrapper">
+                                    <h1 class="cs-heading">Country:</h1>
+                                    <p class="cs-para">Pakistan</p>
+                                </div>
+                            </div>
+                            <div class="left-side">
+                                <div class="solution-wrapper">
+                                    <h1 class="cs-heading">Solution:</h1>
+                                    <p class="cs-para">After joining in 2018, I designed their brand-identity,
+                                        guidelines, brand ethos and office space.</p>
+                                </div>
+                                <div class="services-wrapper">
+                                    <h1 class="cs-heading">Services:</h1>
+                                    <p class="cs-para">Design direction, Execution and Presentation</p>
+                                </div>
+                                <div class="tools-wrapper">
+                                    <h1 class="cs-heading">Tools:</h1>
+                                    <p class="cs-para">Adobe Xd, Figma</p>
+                                </div>
+                                <div class="year-wrapper">
+                                    <h1 class="cs-heading">Year:</h1>
+                                    <p class="cs-para">2019</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="right-image-panel">
+                    <div class="image-stack">
+                        <div class="cs-img1"></div>
+                        <div class="cs-img2"></div>
+                        <div class="cs-img3"></div>
+                        <div class="cs-img4"></div>
+                        <div class="cs-img5"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="cta-wrapper">
+                <div id="cta-work"><span>WORK WITH US</span></div>
+            </div>
+
+        </div>
+        <div id="servicesdetails">
+            <div id="services-intro-wrapper">
+                <h1 class="services-intro-heading">From nurturing an idea, to making it bigger and managing it with
+                    efficiency when its all grown up.</h1>
+                <p class="services-intro-para">Our services spectrum is broad to assist you at all stages of your
+                    business.
+                </p>
+            </div>
+            <div id="services-details-wrapper">
+                <div class="details-container">
+                    <h1 class="service-heading">Identity</h1>
+                    <ul class="services-list">
+                        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z"
+                                    fill="#141313" stroke="#141313" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>Naming your idea</li>
+                        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z"
+                                    fill="#141313" stroke="#141313" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>Defining what it stands for</li>
+                        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z"
+                                    fill="#141313" stroke="#141313" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>Designing how it looks like</li>
+                        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z"
+                                    fill="#141313" stroke="#141313" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>How it carries your message across social media</li>
+                    </ul>
+                </div>
+                <div class="details-container">
+                    <h1 class="service-heading">Website</h1>
+                    <ul class="services-list">
+                        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z"
+                                    fill="#141313" stroke="#141313" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>Landing page to convert your leads to sales</li>
+                        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z"
+                                    fill="#141313" stroke="#141313" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>Website to sell your product</li>
+                        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z"
+                                    fill="#141313" stroke="#141313" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>Portfolio to show your skills & abilities</li>
+                        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z"
+                                    fill="#141313" stroke="#141313" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>Open all these beautifully on all devices</li>
+                    </ul>
+                </div>
+                <div class="details-container">
+                    <h1 class="service-heading">Mobile App</h1>
+                    <ul class="services-list">
+                        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z"
+                                    fill="#141313" stroke="#141313" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>The next big social media</li>
+                        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z"
+                                    fill="#141313" stroke="#141313" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>An Intuitive solution for everyday problems</li>
+                        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z"
+                                    fill="#141313" stroke="#141313" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>A game to kill time</li>
+                        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z"
+                                    fill="#141313" stroke="#141313" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>An extension of your business on everyone’s phone</li>
+                    </ul>
+                </div>
+                <div class="details-container">
+                    <h1 class="service-heading">Administration</h1>
+                    <ul class="services-list">
+                        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z"
+                                    fill="#141313" stroke="#141313" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>Onboarding customers</li>
+                        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z"
+                                    fill="#141313" stroke="#141313" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>Managing staff and sales</li>
+                        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z"
+                                    fill="#141313" stroke="#141313" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>Keeping up with inventory and finances</li>
+                        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z"
+                                    fill="#141313" stroke="#141313" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>Never missing an update on mobile</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="cta-wrapper">
+                <div id="cta-services"><span>WORK WITH US</span></div>
+            </div>
+        </div>
+        <div id="pricingdetails">
+            <div id="price-intro-wrapper">
+                <h1 class="price-intro-heading">We are sure that a bad design will cost you much more than our services.
+                </h1>
+                <p class="price-intro-para">We don’t like to go back and forth on things that are not creative (such as
+                    prices).</p>
+            </div>
+            <div id="price-details-wrapper">
+                <div class="client-info-panel">
+                    <h1 class="price-details-heading">Client partnerships</h1>
+                    <p class="price-details-para">What to expect:</p>
+                    <ul class="price-list">
+                        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z"
+                                    fill="#141313" stroke="#141313" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>
+                            From idea to prototype in 02 weeks</li>
+                        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z"
+                                    fill="#141313" stroke="#141313" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>No sub-contracts. A senior designer will be working on the projects</li>
+                        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z"
+                                    fill="#141313" stroke="#141313" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>Regular progress meetings</li>
+                        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z"
+                                    fill="#141313" stroke="#141313" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>Get discounted prices if you are referred by on of our friends</li>
+                        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z"
+                                    fill="#141313" stroke="#141313" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>Silicon Valley level of UI design and execution</li>
+                    </ul>
+                    <div class="price-and-cta-wrapper">
+                        <div class="price-container">
+                            <p class="sub-text">Starting from</p>
+                            <h1 class="price-number">$1530</h1>
+                        </div>
+                        <div class="cta-container">
+                            <div id="cta-price"><span>WORK WITH US</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-divider"></div>
+                <div class="agency-info-panel">
+                    <h1 class="price-details-heading">Agency partnerships</h1>
+                    <p class="price-details-para">Our requirements:</p>
+                    <ul class="price-list">
+                        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z"
+                                    fill="#141313" stroke="#141313" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>Must have more than 05 years of experience in the business</li>
+                        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z"
+                                    fill="#141313" stroke="#141313" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>No NDA contracts will be signed</li>
+                        <l1><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z"
+                                    fill="#141313" stroke="#141313" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>No standup meetings. We will work with our schedule</li>
+                            <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z"
+                                        fill="#141313" stroke="#141313" stroke-width="1.5" stroke-linejoin="round" />
+                                </svg>We will not fix someone else’s mess
+                        </l1>
+                        <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z"
+                                    fill="#141313" stroke="#141313" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>We will own the publication rights to designs we create</li>
+                    </ul>
+                    <div class="price-and-cta-wrapper">
+                        <div class="price-container">
+                            <p class="sub-text">Starting from</p>
+                            <h1 class="price-number">$2560<span class="under-text">/per month</span></h1>
+                        </div>
+                        <div class="cta-container">
+                            <div id="cta-price"><span>WORK WITH US</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="newsletter-banner">
+            <div id="newsletter-inner-wrapper">
+                <div class="left-text-panel">
+                    <div class="text-inner-wrapper">
+                        <h1 class="newsletter-heading">Not seeing us as a fit, yet!?</h1>
+                        <p class="newsletter-para">No worries! Let’s not leave empty handed. Mind sharing your email so
+                            we
+                            keep you posted about the updates?</p>
+                    </div>
+
+                </div>
+                <div class="right-form-panel">
+                    <div class="form-inner-wrapper">
+                        <form action="" id="subscription-form">
+                            <input type="text" placeholder="Enter your email" name="email" id="getemail">
+                            <button type="button" id="formbtn">SUBSCRIBE TO UPDATES</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div id="footer">
+        <div class="footer-inner-wrapper">
+            <div class="branding-container">
+                <div>
+                    <div class="footer-logo"><svg width="92" height="57" viewBox="0 0 92 57" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2242_231)">
+                                <path
+                                    d="M0.389722 24.2433H16.2482V19.3685H9.13228V19.044L15.9237 10.5941V7.47372H0.715555V12.3484H7.66667V12.7062L0.383333 21.1562L0.389722 24.2433ZM27.4927 24.6662C31.7822 24.6662 35.2271 22.7495 36.0717 19.5973L30.8392 18.6543C30.5682 19.2195 30.1376 19.693 29.6005 20.0164C29.0635 20.3397 28.4436 20.4988 27.8172 20.4738C26.979 20.4924 26.1633 20.2009 25.5267 19.6553C24.89 19.1097 24.4772 18.3483 24.3672 17.5171H36.6186C36.6884 16.9662 36.7208 16.4112 36.7157 15.8559C36.7157 10.4893 33.0766 7.0495 27.5514 7.0495C21.9944 7.0495 18.0959 10.4612 18.0959 15.7908C18.101 21.1881 21.9356 24.6611 27.4927 24.6611V24.6662ZM24.3084 14.2677C24.3485 13.4622 24.693 12.7021 25.2723 12.141C25.8516 11.58 26.6225 11.2599 27.4288 11.2457C28.2378 11.2612 29.0113 11.5807 29.5954 12.1407C30.1796 12.7007 30.5314 13.46 30.5811 14.2677H24.3084ZM46.1789 24.6611C47.1204 24.7054 48.0579 24.5111 48.9043 24.0963C49.7507 23.6815 50.4786 23.0596 51.0204 22.2883H51.3449V24.2382H57.4233V0H51.3462V9.42361H51.0217C50.4704 8.65405 49.736 8.03406 48.8849 7.61976C48.0337 7.20545 47.0927 7.00988 46.1469 7.05077C41.7603 7.05077 38.7358 10.5276 38.7358 15.8572C38.7371 21.2533 41.7271 24.6611 46.1789 24.6611ZM48.2233 19.5589C47.7535 19.552 47.29 19.4488 46.8616 19.2559C46.4331 19.0629 46.0487 18.7843 45.7321 18.4371C45.4154 18.0899 45.1732 17.6816 45.0204 17.2372C44.8676 16.7928 44.8074 16.3219 44.8436 15.8534C44.8074 15.3849 44.8676 14.9139 45.0204 14.4696C45.1732 14.0252 45.4154 13.6168 45.7321 13.2697C46.0487 12.9225 46.4331 12.6438 46.8616 12.4509C47.29 12.2579 47.7535 12.1548 48.2233 12.1478C48.6923 12.1577 49.1543 12.2628 49.5814 12.4568C50.0084 12.6507 50.3917 12.9294 50.7077 13.2759C51.0238 13.6225 51.2662 14.0297 51.4201 14.4727C51.574 14.9158 51.6362 15.3855 51.6031 15.8534C51.6368 16.3214 51.575 16.7913 51.4215 17.2346C51.268 17.678 51.0259 18.0855 50.7101 18.4324C50.3942 18.7794 50.0111 19.0585 49.5841 19.2528C49.157 19.4471 48.695 19.5526 48.2259 19.5628L48.2233 19.5589ZM4.67922 56.2529H12.4456L14.49 46.6338H14.8222L16.8373 56.2529H24.5717L29.3122 39.4833H23.2683L20.6361 50.2729H20.3167L17.3867 39.4833H11.8616L9.22939 50.1106H8.90483L6.23939 39.4833H0L4.67922 56.2529ZM31.4576 56.2529H37.5347V47.0222C37.4994 46.6678 37.5371 46.3099 37.6457 45.9707C37.7542 45.6314 37.9312 45.3181 38.1658 45.05C38.4003 44.782 38.6873 44.5649 39.0091 44.4122C39.3309 44.2596 39.6806 44.1746 40.0366 44.1626C40.375 44.1722 40.7076 44.2525 41.0131 44.3983C41.3187 44.5442 41.5903 44.7523 41.8106 45.0093C42.0309 45.2663 42.1951 45.5666 42.2925 45.8908C42.3899 46.215 42.4184 46.556 42.3762 46.8919V56.2516H48.4853V45.7879C48.4853 41.8881 46.0486 39.0604 42.5704 39.0604C41.6039 39.0674 40.6569 39.3335 39.8281 39.8308C38.9993 40.3281 38.319 41.0386 37.858 41.8881H37.5334V32.0083H31.4576V56.2529ZM54.5956 37.6638C55.0485 37.6915 55.5021 37.6249 55.9279 37.4682C56.3537 37.3115 56.7423 37.068 57.0691 36.7533C57.396 36.4386 57.6539 36.0595 57.8266 35.64C57.9993 35.2204 58.083 34.7696 58.0724 34.316C58.082 33.8642 57.9974 33.4153 57.8239 32.998C57.6504 32.5807 57.3918 32.2041 57.0647 31.8923C56.7376 31.5804 56.3491 31.3401 55.924 31.1868C55.4989 31.0334 55.0465 30.9703 54.5956 31.0014C54.1472 30.9755 53.6983 31.0424 53.277 31.1981C52.8557 31.3537 52.4711 31.5946 52.1472 31.9058C51.8233 32.2169 51.5672 32.5916 51.3948 33.0063C51.2225 33.4211 51.1376 33.8669 51.1456 34.316C51.1368 34.7668 51.2208 35.2145 51.3924 35.6315C51.5641 36.0484 51.8196 36.4256 52.1432 36.7396C52.4667 37.0535 52.8514 37.2976 53.2733 37.4566C53.6952 37.6156 54.1453 37.6861 54.5956 37.6638ZM51.5737 56.2529H57.6508V39.4833H51.5737V56.2529ZM68.1145 56.6758C69.3613 56.6696 70.5998 56.4723 71.7868 56.0906V51.8663C71.255 52.0013 70.71 52.0775 70.1615 52.0937C69.8838 52.0972 69.6084 52.0419 69.3536 51.9313C69.0988 51.8208 68.8703 51.6576 68.6831 51.4524C68.4959 51.2472 68.3543 51.0047 68.2675 50.7408C68.1807 50.477 68.1508 50.1978 68.1797 49.9215V43.8124H71.6833V39.4833H68.1797V34.2508H63.4021L62.2968 39.4833H59.9278V43.8061H62.0732V50.2077C62.0693 54.0756 64.4422 56.6758 68.1145 56.6758ZM82.7706 56.6758C87.0601 56.6758 90.505 54.7592 91.3496 51.6069L86.1222 50.6639C85.8512 51.2291 85.4206 51.7026 84.8836 52.026C84.3466 52.3493 83.7266 52.5084 83.1003 52.4834C82.262 52.502 81.4464 52.2106 80.8098 51.6649C80.1731 51.1193 79.7602 50.3579 79.6503 49.5267H91.9016C91.9715 48.9758 92.0039 48.4208 91.9987 47.8656C91.9987 42.4989 88.3596 39.0591 82.8345 39.0591C77.2775 39.0591 73.3789 42.4708 73.3789 47.8004C73.3789 53.1977 77.2136 56.6758 82.7706 56.6758ZM79.5864 46.2773C79.6264 45.4718 79.971 44.7117 80.5503 44.1506C81.1296 43.5896 81.9004 43.2696 82.7067 43.2553C83.5157 43.2708 84.2893 43.5903 84.8734 44.1503C85.4575 44.7103 85.8094 45.4696 85.859 46.2773H79.5864Z"
+                                    fill="#141313" />
+                                <path
+                                    d="M91.545 9.84913C91.5879 8.84436 91.2357 7.86272 90.564 7.11429C89.8922 6.36586 88.9542 5.91012 87.9506 5.84459C87.5869 5.8338 87.2249 5.89749 86.8867 6.03173C86.5485 6.16597 86.2413 6.36794 85.984 6.62522C85.7267 6.8825 85.5248 7.18967 85.3905 7.52786C85.2563 7.86604 85.1926 8.2281 85.2034 8.5918C85.1911 8.88606 85.2409 9.17962 85.3495 9.45339C85.4581 9.72715 85.6231 9.97501 85.8337 10.1808C86.0444 10.3867 86.296 10.5459 86.5722 10.6481C86.8484 10.7504 87.143 10.7933 87.4369 10.7742C89.7472 10.7742 89.2859 8.51514 90.3899 8.51514C90.878 8.51514 91.2843 9.13103 91.2843 9.82486C91.2843 10.7193 90.5918 11.776 88.486 11.776C86.9974 11.776 85.3797 11.417 84.5837 11.417C83.9077 11.3678 83.2291 11.4625 82.5925 11.6949C81.9558 11.9274 81.3758 12.2922 80.8906 12.7654C80.4054 13.2385 80.026 13.8092 79.7776 14.4397C79.5292 15.0703 79.4174 15.7464 79.4496 16.4233C79.4496 18.4767 80.6813 20.8137 83.0695 20.8137C83.4323 20.8296 83.7945 20.7703 84.1333 20.6395C84.4721 20.5087 84.7802 20.3092 85.0382 20.0536C85.2962 19.798 85.4986 19.4918 85.6326 19.1542C85.7665 18.8167 85.8292 18.455 85.8167 18.0921C85.8275 17.797 85.7769 17.503 85.6681 17.2285C85.5594 16.9541 85.3948 16.7052 85.1848 16.4976C84.9749 16.29 84.7241 16.1283 84.4484 16.0227C84.1727 15.9171 83.8781 15.8699 83.5832 15.8841C81.3241 15.8841 81.7342 18.1176 80.5791 18.1176C79.9402 18.1176 79.7064 17.4251 79.7064 16.8859C79.7064 15.2426 81.632 14.8069 82.9417 14.8069C85.0986 14.8069 87.6912 16.0131 87.6912 18.478C87.7035 19.2337 87.5324 19.9812 87.1926 20.6564C86.8528 21.3316 86.3544 21.9143 85.7401 22.3547C84.4076 23.3182 82.8145 23.8554 81.1707 23.8957C80.4152 23.9231 79.6624 23.7919 78.9607 23.5106C78.2591 23.2293 77.6241 22.804 77.0968 22.2623C76.5695 21.7206 76.1616 21.0744 75.8993 20.3653C75.6371 19.6563 75.5263 18.9002 75.5741 18.1458C75.5741 15.6554 76.9349 13.3196 79.5019 13.3196L79.8099 13.294V13.0116L79.5019 13.0372C77.0371 13.0372 76.6269 10.7781 76.6269 8.72469C76.6269 4.79681 77.9367 3.43597 79.3486 3.43597H79.5032C80.9407 3.41042 81.8914 4.05186 81.8914 5.05364C81.8914 6.77353 79.3754 6.44003 79.3754 8.54453C79.3618 8.83811 79.4096 9.13131 79.5157 9.40538C79.6218 9.67944 79.784 9.92835 79.9918 10.1362C80.1996 10.344 80.4485 10.5061 80.7226 10.6123C80.9967 10.7184 81.2899 10.7662 81.5834 10.7525C81.9798 10.7304 82.3676 10.6278 82.7231 10.4511C83.0786 10.2743 83.3945 10.0271 83.6515 9.7245C83.9084 9.42186 84.1012 9.07011 84.2179 8.69065C84.3347 8.31119 84.3731 7.91195 84.3307 7.51719C84.3238 6.90701 84.1905 6.30488 83.9391 5.74883C83.6878 5.19279 83.3238 4.6949 82.8703 4.28664C82.4167 3.87838 81.8835 3.5686 81.3042 3.37688C80.7248 3.18515 80.112 3.11564 79.5045 3.17275H79.3499C76.3458 3.17275 73.1884 5.09836 73.1884 8.6672C73.1884 11.6713 75.8066 12.9797 78.3749 13.1087L78.4005 13.1343H78.067C73.8823 13.1343 71.6232 15.6758 71.6232 18.294C71.6232 21.1945 74.4471 24.1986 80.4552 24.1986C83.8949 24.1986 87.9519 22.4787 87.9519 18.4741C87.928 17.755 87.6974 17.058 87.2877 16.4666C86.878 15.8751 86.3065 15.4143 85.6417 15.1391C86.0588 15.2474 86.4885 15.2994 86.9194 15.2937C89.8839 15.2912 91.545 12.5184 91.545 9.84913Z"
+                                    fill="#141313" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2242_231">
+                                    <rect width="92" height="56.6758" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <p class="version-info">Portfolio update 8.0<br>Developed in-house</p>
+                    <p class="rights-info"><span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                    stroke="#1E1E22" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M13.5 9.17071C13.1872 9.06015 12.8506 9 12.5 9C10.8431 9 9.5 10.3431 9.5 12C9.5 13.6569 10.8431 15 12.5 15C12.8506 15 13.1872 14.9398 13.5 14.8293"
+                                    stroke="#1E1E22" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>(2025)</p>
+                </div>
+
+            </div>
+            <div class="nav-container">
+                <ul class="footer-nav">
+                    <li>The brain behind</li>
+                    <li>Vision & mission</li>
+                    <li>Terms of services</li>
+                </ul>
+            </div>
+            <div class="socials-container">
+                <ul class="social-links">
+                    <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                                stroke="#1E1E22" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z"
+                                stroke="#1E1E22" stroke-width="1.5" />
+                            <path d="M17.5 6.51013L17.51 6.49902" stroke="#1E1E22" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12Z"
+                                stroke="#1E1E22" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16.6726 20.8437C15.5 14.0002 12.5 8.00027 8.5 2.62988" stroke="#1E1E22"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M2.06653 10.8406C6.00004 11 15.2829 10.5 19.1415 5" stroke="#1E1E22"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M21.9677 12.81C15.3438 10.8407 7.50002 14.0001 5.23145 19.3613" stroke="#1E1E22"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8Z"
+                                stroke="#1E1E22" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M9.09859 11.8261C11.6338 11.8261 11.6338 16 9.09859 16C7.6685 16 6 16 6 16V11.8261M9.09859 11.8261C7.6685 11.8261 6 11.8261 6 11.8261M9.09859 11.8261C11.6338 11.8261 11.6338 8 9.09859 8C7.97183 8 6 8 6 8V11.8261"
+                                stroke="#1E1E22" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M15.5 11C14.1193 11 13 12.1193 13 13.5H18C18 12.1193 16.8807 11 15.5 11Z"
+                                stroke="#1E1E22" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M13 13.5C13 14.8807 14.1193 16 15.5 16C16.4276 16 16.9905 15.6776 17.3126 15.3802"
+                                stroke="#1E1E22" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M17 8.5H14" stroke="#1E1E22" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8Z"
+                                stroke="#1E1E22" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7 17V13.5V10" stroke="#1E1E22" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M11 17V13.75M11 13.75V10M11 13.75C11 10 17 10 17 13.75V17" stroke="#1E1E22"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7 7.01013L7.01 6.99902" stroke="#1E1E22" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div> -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

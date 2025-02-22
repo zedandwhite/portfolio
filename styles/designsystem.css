@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Satoshi-Regular';
+    src: url('../assets/fonts/Satoshi-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Satoshi-Medium';
+    src: url('../assets/fonts/Satoshi-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+  }
+
+:root{
+
+    /* Colors */
+    --bg: "#F6F6F6";
+    --Primary: "#141313";
+    --textLight: "#454647";
+    --white: "#ffffff";
+    
+    /* Typography */
+    /*Above the Fold Title*/
+    --ATFSize: "128px";
+    --ATFLineHeight:"140.8%";
+    --ATFLetterSpace:"-2%"; 
+
+}

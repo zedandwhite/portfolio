@@ -1,0 +1,752 @@
+@font-face {
+    font-family: 'Satoshi-Regular';
+    src: url('../assets/fonts/Satoshi-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi-Medium';
+    src: url('../assets/fonts/Satoshi-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    user-select: none;
+}
+
+body {
+    background-color: #f6f6f6;
+}
+
+#loader-wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 999;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    transition-property: clip-path;
+}
+
+#loader-inner-wrapper {
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-row:auto;
+    align-items: center;
+    justify-items: center;
+    gap: 35px;
+}
+
+
+#loader-bar {
+    width: 200px;
+    height: 3px;
+    display: flex;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    transition-property: clip-path;
+}
+
+.loader-bg {
+    width: 100%;
+    height: 100%;
+    background-color: #D9D9D9;
+    position: relative;
+}
+
+.loader-fg {
+    width: 5px;
+    height: 3px;
+    background-color: #141313;
+    position: absolute;
+}
+
+#above-the-fold {
+    width: 100%;
+    height: 100vh;
+}
+
+#header-container {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 738px;
+    flex-shrink: 0;
+}
+
+.header-link {
+    font-family: Satoshi-medium;
+    font-size: 18px;
+    color: #141313;
+}
+
+#hero-container {
+    width: 100%;
+    height: calc(100vh - 130px);
+}
+
+.intro-container {
+    width: 67.5%;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 16%;
+}
+
+.main-hero-headline {
+    font-family: Satoshi-Regular;
+    font-weight: 400;
+    font-size: 128px;
+    color: #141313;
+    line-height: 140%;
+    letter-spacing: -2.5%;
+}
+
+.main-hero-para {
+    font-family: Satoshi-Regular;
+    font-weight: 400;
+    font-size: 22px;
+    color: #454647;
+    line-height: 140.8%;
+    letter-spacing: -0.44px;
+    width: 546px;
+    margin-top: 45px;
+}
+
+#cta-main {
+    display: inline-flex;
+    margin-left: 1280px;
+    margin-top: 600px;
+    padding: 33px 91px;
+    justify-content: center;
+    align-items: center;
+    background-color: #141313;
+
+    font-family: Satoshi-Medium;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.36px;
+    color: #ffffff;
+}
+
+#workshowcase {
+    width: 100%;
+    height: auto;
+    margin-top: 150px;
+}
+
+#work-intro-wrapper {
+    width: 49.5%;
+    height: auto;
+    margin-left: 16%;
+}
+
+.work-intro-heading {
+    font-family: Satoshi-Regular;
+    font-size: 64px;
+    line-height: -1%;
+    font-weight: 400;
+    color: #141313;
+}
+
+.work-intro-para {
+    font-family: Satoshi-Regular;
+    font-weight: 400;
+    font-size: 22px;
+    color: #454647;
+    line-height: 140.8%;
+    letter-spacing: -0.44px;
+    width: 641px;
+    margin-top: 45px;
+}
+
+#work-case-wrapper {
+    margin-left: 3.3%;
+    margin-right: 3.3%;
+    margin-top: 55px;
+    height: 750px;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 50px;
+}
+
+.left-info-panel {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.case-study-outer-wrapper {
+    padding: 25px;
+}
+
+.case-study-intro {
+    font-family: Satoshi-Medium;
+    font-weight: 500;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #141313;
+}
+
+
+.information-wrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:25px;
+    margin-top: 35px;
+}
+
+.right-side {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 45px;
+}
+
+.cs-heading{
+    font-family: Satoshi-Medium;
+    font-size: 20px;
+    font-weight: 500;
+    color: #141313;
+}
+
+.cs-para {
+    font-family: Satoshi-Regular;
+    font-size: 18px;
+    font-weight: 400;
+    color: #454647;
+    line-height: 26px;
+    margin-top: 15px;
+}
+
+.outcome-wrapper ul {
+    margin-top: 15px;
+    font-family: Satoshi-Regular;
+    font-weight: 400;
+    color: #454647;
+    line-height: 26px;
+    letter-spacing: -0.5%;
+    font-size: 18px;
+
+    list-style-type: none;
+}
+
+.outcome-wrapper ul li {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.left-side {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 45px;
+}
+
+.image-stack {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image-stack div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.cs-img1 {
+    z-index: 5;
+    background: url('../assets/images/img1.png') no-repeat center center;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.cs-img2 {
+    z-index: 4;
+    background: url('../assets/images/img2.png') no-repeat center center;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.cs-img3 {
+    z-index: 3;
+    background: url('../assets/images/img3.png') no-repeat center center;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.cs-img4 {
+    z-index: 2;
+    background: url('../assets/images/img4.png') no-repeat center center;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.cs-img5 {
+    z-index: 1;
+    background: url('../assets/images/img5.png') no-repeat center center;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+
+#cta-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#cta-work {
+    display: inline-flex;
+    padding: 33px 91px;
+    margin-top: 95px;
+    justify-content: center;
+    align-items: center;
+    background-color: #141313;
+
+    font-family: Satoshi-Medium;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.36px;
+    color: #ffffff;
+}
+
+#servicesdetails {
+    width: 100%;
+    height: auto;
+    margin-top: 205px;
+}
+
+#services-intro-wrapper {
+    width: 76.5%;
+    margin-left: 11.7%;
+    text-align: center;
+}
+
+.services-intro-heading {
+    font-family: Satoshi-Regular;
+    font-size: 64px;
+    line-height: -1%;
+    font-weight: 400;
+    color: #141313;
+}
+
+.services-intro-para {
+    font-family: Satoshi-Regular;
+    font-weight: 400;
+    font-size: 22px;
+    color: #454647;
+    line-height: 140.8%;
+    letter-spacing: -0.44px;
+    margin-top: 45px;
+}
+
+#services-details-wrapper {
+    margin-left: 3.3%;
+    margin-right: 3.3%;
+    margin-top: 105px;
+    height: 240px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 55px;
+}
+
+.details-container {
+    width: 100%;
+    height: 100%;
+}
+
+.service-heading {
+    font-family: Satoshi-Regular;
+    font-size: 32px;
+    font-weight: 500;
+    color: #141313;
+}
+
+.services-list {
+    margin-top: 35px;
+    font-family: Satoshi-Regular;
+    font-weight: 400;
+    color: #141313;
+    line-height: 26px;
+    letter-spacing: -0.5%;
+    font-size: 18px;
+
+    list-style-type: none;
+}
+
+.services-list li {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#cta-services {
+    display: inline-flex;
+    padding: 33px 91px;
+    margin-top: 95px;
+    justify-content: center;
+    align-items: center;
+    background-color: #141313;
+
+    font-family: Satoshi-Medium;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.36px;
+    color: #ffffff;
+}
+
+#pricingdetails {
+    width: 100%;
+    height: auto;
+    margin-top: 205px;
+}
+
+#price-intro-wrapper {
+    width: 61%;
+    margin-left: 19.4%;
+    text-align: center;
+}
+
+.price-intro-heading {
+    font-family: Satoshi-Regular;
+    font-size: 64px;
+    line-height: -1%;
+    font-weight: 400;
+    color: #141313;
+}
+
+.price-intro-para {
+    font-family: Satoshi-Regular;
+    font-weight: 400;
+    font-size: 22px;
+    color: #454647;
+    line-height: 140.8%;
+    letter-spacing: -0.44px;
+    margin-top: 45px;
+}
+
+#price-details-wrapper {
+    margin-left: 3.3%;
+    margin-right: 3.3%;
+    margin-top: 55px;
+    height: 540px;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 2px 1fr;
+    gap: 25px;
+}
+
+.price-divider {
+    width: 2px;
+    height: 100%;
+    background-color: #141313;
+}
+
+.price-details-heading {
+    font-family: Satoshi-Medium;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #141313;
+}
+
+.price-details-para {
+    font-family: Satoshi-Regular;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #454647;
+    margin-top: 25px;
+}
+
+.price-list {
+    margin-top: 15px;
+    font-family: Satoshi-Regular;
+    font-weight: 400;
+    color: #141313;
+    line-height: 26px;
+    letter-spacing: -0.5%;
+    font-size: 18px;
+
+    list-style-type: none;
+}
+
+.price-list li {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.price-and-cta-wrapper {
+    width: 100%;
+    height: auto;
+    margin-top: 115px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-container {
+    display: grid;
+    align-items: center;
+}
+
+.sub-text {
+    font-family: Satoshi-Regular;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.09px;
+    color: #454647;
+}
+
+.price-number {
+    margin-top: 5px;
+
+    font-family: Satoshi-Medium;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #141313;
+}
+
+.under-text {
+    font-family: Satoshi-Regular;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.08px;
+    color: #454647;
+}
+
+#cta-price {
+    display: inline-flex;
+    padding: 33px 91px;
+    justify-content: center;
+    align-items: center;
+    background-color: #141313;
+
+    font-family: Satoshi-Medium;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.36px;
+    color: #ffffff;
+}
+
+#newsletter-banner {
+    width: 100%;
+    height: 550px;
+    background-color: #141313;
+    margin-top: 90px;
+}
+
+#newsletter-inner-wrapper {
+    margin-left: 3.3%;
+    margin-right: 3.3%;
+    height: 100%;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left-text-panel {
+    display: grid;
+    align-items: center;
+}
+
+.newsletter-heading {
+    font-family: Satoshi-Regular;
+    font-size: 64px;
+    line-height: -1%;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.newsletter-para {
+    width: 85%;
+    font-family: Satoshi-Regular;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 154.545%;
+    letter-spacing: -0.44px;
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+
+.right-form-panel {
+    display: grid;
+    align-items: center;
+}
+
+
+
+#subscription-form {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#getemail {
+    width: 60%;
+    height: 80px;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    background: none;
+    padding-left: 10px;
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.36px;
+}
+
+#formbtn {
+    display: inline-flex;
+    padding: 33px 52px;
+    margin-top: 95px;
+    justify-content: center;
+    align-items: center;
+    justify-self: end;
+    background-color: #ffffff;
+    border: none;
+
+    font-family: Satoshi-Medium;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.36px;
+    color: #141313;
+}
+
+#footer {
+    width: 100%;
+    height: 300px;
+}
+
+.footer-inner-wrapper {
+    width: 67.5%;
+    margin-left: 16%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+}
+
+.branding-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.version-info {
+    font-family: Satoshi-Regular;
+    color: #141313;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.09px;
+
+    margin-top: 15px;
+}
+
+.rights-info {
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 5px;
+
+    font-family: Satoshi-Regular;
+    color: #141313;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.09px;
+}
+
+.nav-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-nav {
+    display: inline-flex;
+    align-items: center;
+    gap: 55px;
+    list-style-type: none;
+}
+
+.footer-nav li {
+    display: inline;
+    font-family: Satoshi-Regular;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #141313;
+}
+
+.socials-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links {
+    display: inline-flex;
+    align-items: center;
+    gap: 25px;
+    list-style-type: none;
+}
+
+.social-links li {
+    display: inline;
+}
